@@ -64,7 +64,7 @@ Read the wiring and power warnings in the sketch before connecting hardware.
 
 ## CAD and printable files
 
-`cad/print-files/` contains the supplied STL models and 3MF print projects:
+[Download the complete CAD/3D-print package from Release v1.0.0](https://github.com/huyntriphat01-star/3d-printed-rc-car/releases/download/v1.0.0/RC.CAR.zip). It contains:
 
 - Shark-fin body detail
 - RC car body
@@ -81,9 +81,7 @@ The original SolidWorks source assembly was not present in the supplied archive.
 ├── assets/
 │   ├── images/
 │   └── videos/
-├── cad/
-│   └── print-files/
-├── docs/
+├── GitHub Release v1.0.0  # Complete STL/3MF package
 └── firmware/
     └── rc_car_esp32s3/
 ```
