@@ -122,32 +122,17 @@ The original SolidWorks source assembly was not present in the supplied archive.
     └── rc_car_esp32s3/
 ```
 
-## Validation status
-
-| Item | Status |
-| --- | --- |
-| CAD and printed-part fabrication | Completed |
-| Mechanical assembly | Completed |
-| Electronics integration | Completed |
-| Public driving demonstration | Completed |
-| Competition participation | Completed |
-| Firmware source published | Completed |
-| Reproducible clean firmware build | Not independently verified |
-| Long-duration reliability test | Not documented |
-
 ## Skills demonstrated
 
 `SolidWorks` · `FDM 3D printing` · `ESP32-S3` · `Arduino/C++` · `RC electronics` · `servo/ESC control` · `rapid prototyping` · `system integration` · `technical documentation`
-
-## Next improvements
-
-- Add measured mass, wheelbase, top speed, runtime, and lap-test data.
-- Record a clean firmware build with exact board and library versions.
-- Add wiring and power-distribution diagrams.
-- Document failure modes and changes between prototypes.
 
 ## Notes
 
 - Firmware preserves the supplied test limits, including 40% maximum throttle.
 - Test steering direction, ESC neutral, braking, and shared ground with the wheels raised first.
-- No open-source license is declared. All rights are reserved unless the owner adds a license.
+
+## License
+
+- Firmware and source code: [MIT License](LICENSE).
+- CAD, STL, and 3MF design files: [Creative Commons Attribution 4.0 International](LICENSE-CAD.md).
+- Photos and videos remain © Huynh Tri Phat. Reuse requires permission.
