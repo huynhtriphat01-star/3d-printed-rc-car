@@ -1,8 +1,37 @@
 # 3D-Printed RC Racing Car
 
+![ESP32-S3](https://img.shields.io/badge/controller-ESP32--S3-red)
+![CAD](https://img.shields.io/badge/CAD-SolidWorks-blue)
+![Fabrication](https://img.shields.io/badge/fabrication-FDM%203D%20printing-orange)
+![Status](https://img.shields.io/badge/status-competition%20prototype-success)
+
 ![SolidWorks assembly of the RC car](assets/images/cad-side-view.jpg)
 
 An ESP32-S3 radio-controlled racing car designed in SolidWorks and built with 3D-printed parts.
+
+## 30-second overview
+
+| Question | Answer |
+| --- | --- |
+| What did I build? | A complete RC racing prototype: mechanical design, printed structure, electronics, control firmware, and track testing. |
+| Why is it notable? | The car received a **Consolation Prize at F-Racing, FPT University**. |
+| What does this repo prove? | CAD-to-hardware execution, electromechanical integration, embedded control, iterative fabrication, and competition delivery. |
+| Best evidence | [Driving video](assets/videos/driving-demo.mp4), competition photos, firmware, and the downloadable CAD/print release. |
+
+## My contribution
+
+- Developed and iterated the vehicle's mechanical concept and 3D-printed structure.
+- Integrated the ESP32-S3, PS2-compatible receiver, ESC, steering servo, gyro, battery, and wiring.
+- Prepared the control firmware with throttle ramping, steering input, braking, and a test-limit throttle cap.
+- Assembled and tested the physical prototype, then documented the result for reproducibility.
+- Participated in F-Racing and delivered a working competition vehicle.
+
+<details>
+<summary><strong>Tóm tắt tiếng Việt</strong></summary>
+
+Xe đua RC dùng ESP32-S3, thiết kế cơ khí trên SolidWorks và chế tạo bằng in 3D. Dự án thể hiện toàn bộ quá trình từ CAD, in mẫu, lắp điện, lập trình điều khiển đến chạy thử và thi đấu F-Racing tại FPT University.
+
+</details>
 
 ## Achievement
 
@@ -19,6 +48,13 @@ This repository follows the prototype from CAD design through printing, assembly
 | Controller | ESP32-S3 with a PS2-compatible receiver |
 | Steering | MG996R servo through an RX-7D gyro |
 | Throttle | Bidirectional RC ESC with ramping and L2 braking |
+
+## Engineering decisions
+
+- **Modular printed construction:** allowed damaged or revised parts to be replaced without rebuilding the whole car.
+- **Throttle ramping and 40% test cap:** reduced drivetrain shock during early validation.
+- **Separate steering gyro path:** supported stable steering while keeping ESP32-S3 responsible for command handling.
+- **Release-based CAD delivery:** keeps the full STL/3MF package downloadable without bloating normal source browsing.
 
 ## Gallery
 
@@ -85,6 +121,30 @@ The original SolidWorks source assembly was not present in the supplied archive.
 └── firmware/
     └── rc_car_esp32s3/
 ```
+
+## Validation status
+
+| Item | Status |
+| --- | --- |
+| CAD and printed-part fabrication | Completed |
+| Mechanical assembly | Completed |
+| Electronics integration | Completed |
+| Public driving demonstration | Completed |
+| Competition participation | Completed |
+| Firmware source published | Completed |
+| Reproducible clean firmware build | Not independently verified |
+| Long-duration reliability test | Not documented |
+
+## Skills demonstrated
+
+`SolidWorks` · `FDM 3D printing` · `ESP32-S3` · `Arduino/C++` · `RC electronics` · `servo/ESC control` · `rapid prototyping` · `system integration` · `technical documentation`
+
+## Next improvements
+
+- Add measured mass, wheelbase, top speed, runtime, and lap-test data.
+- Record a clean firmware build with exact board and library versions.
+- Add wiring and power-distribution diagrams.
+- Document failure modes and changes between prototypes.
 
 ## Notes
 
