@@ -1,0 +1,12 @@
+# SolidWorks temporary and backup files
+~$*
+*.swp
+*.bak
+# Build and local environment files
+.pio/
+build/
+.env
+.env.*
+# OS metadata
+.DS_Store
+Thumbs.db
